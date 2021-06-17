@@ -29,7 +29,7 @@ const
 mongoose.set("useFindAndModify", false);
 mongoose.connect(URLLocalDB, {useNewUrlParser: true, useUnifiedTopology: true} )
         .then(db => console.log("---> Conexión con base de datos establecida correctamente..."))
-        .catch(err => console.log(err));
+        .catch(err => console.log("Error en la base de datos" + err));
 
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
