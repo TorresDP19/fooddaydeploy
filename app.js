@@ -56,6 +56,5 @@ app.get('*', function(req, res, next) {
 });
 
 /* ====================================================== */
-
-var port_number = app.listen(process.env.PORT || 3977, console.log("---> La aplicación esta corriendo en el puerto: 3977"));
 app.listen(port_number);
+var port_number = app.listen(process.env.PORT || 7777, console.log("---> La aplicación esta corriendo en el puerto: 3977"));
